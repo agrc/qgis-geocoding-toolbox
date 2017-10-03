@@ -20,13 +20,16 @@
  *                                                                         *
  ***************************************************************************/
 """
-from PyQt4.QtCore import QSettings, QTranslator, qVersion, QCoreApplication
-from PyQt4.QtGui import QAction, QIcon
+import os.path
+
 # Initialize Qt resources from file resources.py
 import resources
+from geocode_address_table import TableGeocoder
 # Import the code for the dialog
 from geocoding_toolbox_dialog import AGRCGeocodingToolboxDialog
-import os.path
+from PyQt4.QtCore import QCoreApplication, QSettings, QTranslator, qVersion
+from PyQt4.QtGui import QAction, QIcon
+from qgis.gui import QgsMessageBar
 
 
 class AGRCGeocodingToolbox:
@@ -58,7 +61,6 @@ class AGRCGeocodingToolbox:
             if qVersion() > '4.3.3':
                 QCoreApplication.installTranslator(self.translator)
 
-
         # Declare instance attributes
         self.actions = []
         self.menu = self.tr(u'&AGRC Geocoding Toolbox')
@@ -81,18 +83,17 @@ class AGRCGeocodingToolbox:
         # noinspection PyTypeChecker,PyArgumentList,PyCallByClass
         return QCoreApplication.translate('AGRCGeocodingToolbox', message)
 
-
     def add_action(
-        self,
-        icon_path,
-        text,
-        callback,
-        enabled_flag=True,
-        add_to_menu=True,
-        add_to_toolbar=True,
-        status_tip=None,
-        whats_this=None,
-        parent=None):
+            self,
+            icon_path,
+            text,
+            callback,
+            enabled_flag=True,
+            add_to_menu=True,
+            add_to_toolbar=True,
+            status_tip=None,
+            whats_this=None,
+            parent=None):
         """Add a toolbar icon to the toolbar.
 
         :param icon_path: Path to the icon for this action. Can be a resource
@@ -168,7 +169,6 @@ class AGRCGeocodingToolbox:
             callback=self.run,
             parent=self.iface.mainWindow())
 
-
     def unload(self):
         """Removes the plugin menu item and icon from QGIS GUI."""
         for action in self.actions:
@@ -179,15 +179,14 @@ class AGRCGeocodingToolbox:
         # remove the toolbar
         del self.toolbar
 
-
     def run(self):
         """Run method that performs all the real work"""
         # show the dialog
         self.dlg.show()
         # Run the dialog event loop
         result = self.dlg.exec_()
+
         # See if OK was pressed
         if result:
-            # Do something useful here - delete the line containing pass and
-            # substitute with your code.
-            pass
+            outpath = TableGeocoder(**self.dlg.get_parameters()).start()
+            self.iface.messageBar().pushInfo("Complete!", outpath)

@@ -38,13 +38,13 @@ LOCALES =
 # translation
 SOURCES = \
 	__init__.py \
-	geocoding_toolbox.py geocoding_toolbox_dialog.py
+	geocoding_toolbox.py geocoding_toolbox_dialog.py geocode_address_table.py
 
 PLUGINNAME = AGRCGeocodingToolbox
 
 PY_FILES = \
 	__init__.py \
-	geocoding_toolbox.py geocoding_toolbox_dialog.py
+	geocoding_toolbox.py geocoding_toolbox_dialog.py geocode_address_table.py
 
 UI_FILES = geocoding_toolbox_dialog_base.ui
 
