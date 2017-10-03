@@ -1,7 +1,7 @@
-# This file contains metadata for your plugin. Since 
-# version 2.0 of QGIS this is the proper way to supply 
-# information about a plugin. The old method of 
-# embedding metadata in __init__.py will 
+# This file contains metadata for your plugin. Since
+# version 2.0 of QGIS this is the proper way to supply
+# information about a plugin. The old method of
+# embedding metadata in __init__.py will
 # is no longer supported since version 2.0.
 
 # This file should be included when you package your plugin.# Mandatory items:
@@ -11,13 +11,13 @@ name=AGRC Geocoding Toolbox
 qgisMinimumVersion=2.0
 description=This plugin provides tools for geocoding addresses using AGRC's web services.
 version=0.1
-author=AGRC
+author=Scott Davis
 email=stdavis@utah.gov
 
 about=This plugin provides tools for using AGRC's geocoding web service (http://api.mapserv.utah.gov/).
 
-tracker=placeholder
-repository=placeholder
+tracker=https://github.com/agrc/qgis-geocoding-toolbox/issues
+repository=https://github.com/agrc/qgis-geocoding-toolbox/
 # End of mandatory metadata
 
 # Recommended items:
@@ -28,7 +28,7 @@ repository=placeholder
 # Tags are comma separated with spaces allowed
 tags=geocoding
 
-homepage=placeholder
+homepage=https://github.com/agrc/qgis-geocoding-toolbox/
 category=Plugins
 icon=icon.png
 # experimental flag
@@ -36,4 +36,3 @@ experimental=True
 
 # deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False
-
