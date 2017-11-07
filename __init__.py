@@ -3,7 +3,7 @@
 /***************************************************************************
  AGRCGeocodingToolbox
                                  A QGIS plugin
- This plugin provides tools for geocoding addresses using AGRC's web services.
+ A QGIS plugin for geocoding addresses via api.mapserv.utah.gov (Utah-only addresses).
                              -------------------
         begin                : 2017-10-02
         copyright            : (C) 2017 by AGRC
