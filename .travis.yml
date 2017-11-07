@@ -1,0 +1,15 @@
+os: osx
+language: python
+python:
+    - "2.7"
+install:
+    - brew install qgis2
+    - pip install -r requirements.txt
+script: "pytest"
+notifications:
+    email:
+        on_success: change
+        on_failure: change
+after_success:
+    - codecov
+cache: pip

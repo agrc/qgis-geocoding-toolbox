@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/agrc/qgis-geocoding-toolbox.svg?branch=master)](https://travis-ci.org/agrc/qgis-geocoding-toolbox)
+
 # qgis-geocoding-toolbox
 A QGIS plugin for geocoding addresses via [api.mapserv.utah.gov](https://api.mapserv.utah.gov) (Utah-only addresses).
 
