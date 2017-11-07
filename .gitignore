@@ -4,3 +4,4 @@
 .benchmarks/
 .noseids
 help/build/
+resources.py
