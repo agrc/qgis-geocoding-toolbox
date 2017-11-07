@@ -39,7 +39,7 @@ def get_version(check_url):
     try:
         r = urllib.urlopen(check_url)
         response = json.load(r)
-    except:
+    except Exception:
         return None
     if r.getcode() is 200:
         currentVersion = response['VERSION_NUMBER']
@@ -76,7 +76,7 @@ class Geocoder(object):
         try:
             r = urllib.urlopen(url)
             response = json.load(r)
-        except:
+        except Exception:
             return None
 
         # check status code
@@ -100,7 +100,7 @@ class Geocoder(object):
         try:
             r = urllib.urlopen(url)
             response = json.load(r)
-        except:
+        except Exception:
             return None
 
         if r.getcode() >= 500:

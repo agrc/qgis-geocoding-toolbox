@@ -23,13 +23,12 @@
 import os.path
 
 # Initialize Qt resources from file resources.py
-import resources
+import resources  # noqa
 from geocode_address_table import TableGeocoder
 # Import the code for the dialog
 from geocoding_toolbox_dialog import AGRCGeocodingToolboxDialog
 from PyQt4.QtCore import QCoreApplication, QSettings, QTranslator, qVersion
 from PyQt4.QtGui import QAction, QIcon
-from qgis.gui import QgsMessageBar
 
 
 class AGRCGeocodingToolbox:

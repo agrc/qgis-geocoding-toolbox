@@ -17,8 +17,7 @@ import unittest
 from PyQt4.QtGui import QIcon
 
 
-
-class AGRCGeocodingToolboxDialogTest(unittest.TestCase):
+class AGRCGeocodingToolboxResourcesTest(unittest.TestCase):
     """Test rerources work."""
 
     def setUp(self):
@@ -34,11 +33,3 @@ class AGRCGeocodingToolboxDialogTest(unittest.TestCase):
         path = ':/plugins/AGRCGeocodingToolbox/icon.png'
         icon = QIcon(path)
         self.assertFalse(icon.isNull())
-
-if __name__ == "__main__":
-    suite = unittest.makeSuite(AGRCGeocodingToolboxResourcesTest)
-    runner = unittest.TextTestRunner(verbosity=2)
-    runner.run(suite)
-
-
-

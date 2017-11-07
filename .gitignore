@@ -1,6 +1,6 @@
 *.pyc
 .cache/
-.coverage
+.coverage*
 .benchmarks/
 .noseids
 help/build/
