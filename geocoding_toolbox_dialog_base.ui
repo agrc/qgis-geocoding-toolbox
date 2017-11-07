@@ -7,18 +7,22 @@
     <x>0</x>
     <y>0</y>
     <width>468</width>
-    <height>423</height>
+    <height>391</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>AGRC Geocoding Toolbox</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon.png</normaloff>icon.png</iconset>
+  </property>
   <widget class="QDialogButtonBox" name="button_box">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>380</y>
-     <width>341</width>
+     <x>283</x>
+     <y>349</y>
+     <width>171</width>
      <height>30</height>
     </rect>
    </property>
@@ -33,30 +37,17 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>40</y>
+     <y>31</y>
      <width>431</width>
      <height>21</height>
     </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>24</y>
-     <width>321</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>API Key (obtain via https://api.mapserv.utah.gov)</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>74</y>
+     <y>56</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -65,34 +56,11 @@
     <string>Address Table</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="addressTableEdit">
-   <property name="geometry">
-    <rect>
-     <x>21</x>
-     <y>94</y>
-     <width>381</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="addressTableButton">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>90</y>
-     <width>54</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>...</string>
-   </property>
-  </widget>
   <widget class="QComboBox" name="idFieldComboBox">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>134</y>
+     <y>110</y>
      <width>431</width>
      <height>26</height>
     </rect>
@@ -102,7 +70,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>120</y>
+     <y>96</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -115,7 +83,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>174</y>
+     <y>150</y>
      <width>431</width>
      <height>26</height>
     </rect>
@@ -125,7 +93,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>160</y>
+     <y>136</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -138,7 +106,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>206</y>
+     <y>175</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -151,7 +119,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>220</y>
+     <y>189</y>
      <width>431</width>
      <height>26</height>
     </rect>
@@ -161,7 +129,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>246</y>
+     <y>215</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -174,19 +142,9 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>260</y>
+     <y>229</y>
      <width>431</width>
      <height>26</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="outputFolderEdit">
-   <property name="geometry">
-    <rect>
-     <x>21</x>
-     <y>344</y>
-     <width>381</width>
-     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -194,7 +152,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>327</y>
+     <y>296</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -203,24 +161,11 @@
     <string>Output Folder</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="outputFolderButton">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>340</y>
-     <width>54</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>...</string>
-   </property>
-  </widget>
   <widget class="QComboBox" name="spatialRefComboBox">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>300</y>
+     <y>269</y>
      <width>431</width>
      <height>26</height>
     </rect>
@@ -230,7 +175,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>286</y>
+     <y>255</y>
      <width>131</width>
      <height>16</height>
     </rect>
@@ -239,6 +184,115 @@
     <string>Spatial Reference</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>15</y>
+     <width>76</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Obtain from:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="addressTableEdit">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>72</y>
+     <width>371</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addressTableButton">
+   <property name="geometry">
+    <rect>
+     <x>398</x>
+     <y>68</y>
+     <width>54</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="outputFolderEdit">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>313</y>
+     <width>371</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="outputFolderButton">
+   <property name="geometry">
+    <rect>
+     <x>398</x>
+     <y>309</y>
+     <width>54</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>15</y>
+     <width>47</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>API Key</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>15</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;a href=&quot;https://api.mapserv.utah.gov&quot;&gt;api.mapserv.utah.gov&lt;/a&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="openExternalLinks">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>button_box</zorder>
+  <zorder>apiKeyEdit</zorder>
+  <zorder>label_2</zorder>
+  <zorder>idFieldComboBox</zorder>
+  <zorder>label_3</zorder>
+  <zorder>addressFieldComboBox</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>zoneFieldComboBox</zorder>
+  <zorder>label_6</zorder>
+  <zorder>locatorComboBox</zorder>
+  <zorder>label_7</zorder>
+  <zorder>spatialRefComboBox</zorder>
+  <zorder>label_8</zorder>
+  <zorder>label_10</zorder>
  </widget>
  <tabstops>
   <tabstop>apiKeyEdit</tabstop>
