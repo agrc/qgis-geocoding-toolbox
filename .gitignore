@@ -3,3 +3,4 @@
 .coverage
 .benchmarks/
 .noseids
+help/build/
