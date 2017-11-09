@@ -20,10 +20,10 @@
   <widget class="QDialogButtonBox" name="button_box">
    <property name="geometry">
     <rect>
-     <x>283</x>
-     <y>349</y>
-     <width>171</width>
-     <height>30</height>
+     <x>290</x>
+     <y>350</y>
+     <width>164</width>
+     <height>32</height>
     </rect>
    </property>
    <property name="orientation">
@@ -275,9 +275,25 @@
     <bool>true</bool>
    </property>
   </widget>
-  <zorder>layoutWidget</zorder>
-  <zorder>layoutWidget</zorder>
-  <zorder>layoutWidget</zorder>
+  <widget class="QPushButton" name="showHelpButton">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>350</y>
+     <width>107</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Show Help</string>
+   </property>
+  </widget>
+  <zorder>addressTableEdit</zorder>
+  <zorder>addressTableButton</zorder>
+  <zorder>outputFolderEdit</zorder>
+  <zorder>outputFolderButton</zorder>
+  <zorder>label</zorder>
+  <zorder>label_9</zorder>
   <zorder>button_box</zorder>
   <zorder>apiKeyEdit</zorder>
   <zorder>label_2</zorder>
@@ -293,6 +309,7 @@
   <zorder>spatialRefComboBox</zorder>
   <zorder>label_8</zorder>
   <zorder>label_10</zorder>
+  <zorder>showHelpButton</zorder>
  </widget>
  <tabstops>
   <tabstop>apiKeyEdit</tabstop>

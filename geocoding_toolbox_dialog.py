@@ -23,11 +23,13 @@
 
 import csv
 import os
+from functools import partial
 
 from geocode_address_table import UNIQUE_RUN, TableGeocoder
 from PyQt4 import QtGui, uic
 from PyQt4.QtCore import QSettings
 from PyQt4.QtGui import QFileDialog
+from qgis.utils import showPluginHelp
 
 SETTINGS_API_KEY = 'agrc_geocoding/apikey'
 SETTINGS_ADDRESS_TABLE = 'agrc_geocoding/addresstable'
@@ -58,6 +60,8 @@ class AGRCGeocodingToolboxDialog(QtGui.QDialog, FORM_CLASS):
         self.outputFolderButton.clicked.connect(self.select_output_folder)
         self.addressTableEdit.clear()
         self.addressTableButton.clicked.connect(self.select_address_table)
+
+        self.showHelpButton.clicked.connect(partial(showPluginHelp, None, filename='help/index'))
 
         # insert cached values, if any
         s = QSettings()
