@@ -187,5 +187,8 @@ class AGRCGeocodingToolbox:
 
         # See if OK was pressed
         if result:
-            outpath = TableGeocoder(**self.dlg.get_parameters()).start()
-            self.iface.messageBar().pushSuccess("Complete!", outpath)
+            try:
+                outpath = TableGeocoder(**self.dlg.get_parameters()).start()
+                self.iface.messageBar().pushSuccess("Complete!", outpath)
+            except Exception as e:
+                self.iface.messageBar().pushMessage('Error', e.message, level=self.iface.messageBar().CRITICAL)
