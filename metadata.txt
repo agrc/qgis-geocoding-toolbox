@@ -10,7 +10,7 @@
 name=AGRC Geocoding Toolbox
 qgisMinimumVersion=2.0
 description=A QGIS plugin for geocoding addresses via api.mapserv.utah.gov (Utah only addresses).
-version=0.1
+version=1.0.0
 author=Scott Davis
 email=stdavis@utah.gov
 
@@ -24,7 +24,8 @@ repository=https://github.com/agrc/qgis-geocoding-toolbox/
 
 # Uncomment the following line and add your changelog:
 changelog=
-  0.1 - Initial release (experimental)
+  1.0.0 (11/9/2017) - General refinements including help, form layout, error messages, progress dialog record count, form value caching, and icon.
+  0.1.0 - Initial release (experimental)
 
 # Tags are comma separated with spaces allowed
 tags=geocoding, utah, agrc, address
@@ -33,7 +34,7 @@ homepage=https://github.com/agrc/qgis-geocoding-toolbox/
 category=Plugins
 icon=icon.png
 # experimental flag
-experimental=True
+experimental=False
 
 # deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False
