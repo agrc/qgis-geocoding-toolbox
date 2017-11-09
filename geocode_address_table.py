@@ -305,11 +305,12 @@ class TableGeocoder(object):
         # Setup progress bar
         with open(self._inputTable) as input_csvfile:
             record_count = sum(1 for line in input_csvfile)
+            progress_label = 'matching addresses... ({} of {})'
 
             #: set up progress dialog
             dialog = QProgressDialog()
             dialog.setWindowTitle('Geocoder Progress')
-            dialog.setLabelText('matching addresses...')
+            dialog.setLabelText(progress_label.format(0, record_count))
             dialog.setAutoClose(True)
             bar = QProgressBar(dialog)
             bar.setTextVisible(True)
@@ -385,6 +386,8 @@ class TableGeocoder(object):
 
                 # Update progress bar
                 bar.setValue(rowNum)
+                dialog.setLabelText(progress_label.format(rowNum, record_count))
+
                 QApplication.processEvents()
                 rowNum += 1
                 sequentialBadRequests = 0
