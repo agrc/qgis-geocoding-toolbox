@@ -1,6 +1,8 @@
 # qgis-geocoding-toolbox
 A QGIS plugin for geocoding addresses via [api.mapserv.utah.gov](https://api.mapserv.utah.gov) (Utah-only addresses).
 
+[Download the latest release](`AGRCGeocodingToolbox.zip`).
+
 ## Development
 Install development dependencies by running: `pip install -r requirements.txt` (recommended to do this within a virtual environment). Update this file by running: `pip freeze -l > requirements.txt`.
 
