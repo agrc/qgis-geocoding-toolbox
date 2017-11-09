@@ -13,3 +13,10 @@ Run `ptw` or `pytest` to run tests.
 Helpful commands:
 - `pb_tool deploy` - Rebuild and deploy the plugin to your local plugins directory. Restart QGIS to see the changes. Use the [Plugin Reloader](https://plugins.qgis.org/plugins/plugin_reloader/) QGIS plugin to reload the plugin under development after running this command. This saves you from having to restart QGIS.
 - `pb_tool zip` - Package the plugin into a zip file suitable for uploading to the QGIS plugin repository
+
+### Release Steps
+1. `pytest`
+1. Update `metadata.txt` with new version number and changelog text
+1. Commit and tag (e.g. `v1.0.0`) changes
+1. `pb_tool zip`
+1. Upload `AGRCGeocodingToolbox.zip` as a new version in the [QGIS Plugin Repository](http://plugins.qgis.org/plugins/AGRCGeocodingToolbox/version/add/)
