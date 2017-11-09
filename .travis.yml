@@ -2,7 +2,6 @@ os: osx
 language: generic
 before_install:
     - brew update
-    - brew install python2
     - virtualenv env -p python
     - source env/bin/activate
     - brew install qgis2
