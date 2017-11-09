@@ -1,8 +1,10 @@
 os: osx
-language: python
-python:
-    - "2.7"
-install:
+language: generic
+before_install:
+    - brew update
+    - brew install python2
+    - virtualenv env -p python
+    - source env/bin/activate
     - brew install qgis2
     - pip install -r requirements.txt
 script: "pytest"
