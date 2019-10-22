@@ -5,7 +5,6 @@ Script tool for ArcGIS which geocodes a table of addresses and produces a new ta
 """
 from __future__ import print_function
 
-from builtins import next
 from future import standard_library
 standard_library.install_aliases()
 from builtins import chr

@@ -20,18 +20,21 @@
  *                                                                         *
  ***************************************************************************/
 """
+from __future__ import absolute_import
+from builtins import object
 import os.path
 
 # Initialize Qt resources from file resources.py
-import resources  # noqa
-from geocode_address_table import TableGeocoder
+from . import resources  # noqa
+from .geocode_address_table import TableGeocoder
 # Import the code for the dialog
-from geocoding_toolbox_dialog import AGRCGeocodingToolboxDialog
-from PyQt4.QtCore import QCoreApplication, QSettings, QTranslator, qVersion
-from PyQt4.QtGui import QAction, QIcon
+from .geocoding_toolbox_dialog import AGRCGeocodingToolboxDialog
+from qgis.PyQt.QtCore import QCoreApplication, QSettings, QTranslator, qVersion
+from qgis.PyQt.QtWidgets import QAction
+from qgis.PyQt.QtGui import QIcon
 
 
-class AGRCGeocodingToolbox:
+class AGRCGeocodingToolbox(object):
     """QGIS Plugin Implementation."""
 
     def __init__(self, iface):

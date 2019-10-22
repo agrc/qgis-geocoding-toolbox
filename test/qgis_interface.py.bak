@@ -15,7 +15,7 @@
 """
 import logging
 
-from qgis.PyQt.QtCore import QObject, pyqtSignal, pyqtSlot
+from PyQt4.QtCore import QObject, pyqtSignal, pyqtSlot
 from qgis.core import QgsMapLayerRegistry
 from qgis.gui import QgsMapCanvasLayer
 

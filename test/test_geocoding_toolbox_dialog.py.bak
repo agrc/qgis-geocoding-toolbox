@@ -7,7 +7,6 @@
      (at your option) any later version.
 
 """
-from __future__ import absolute_import
 
 __author__ = 'stdavis@utah.gov'
 __date__ = '2017-10-02'
@@ -16,8 +15,8 @@ __copyright__ = 'Copyright 2017, AGRC'
 import unittest
 
 from geocoding_toolbox_dialog import AGRCGeocodingToolboxDialog
-from qgis.PyQt.QtWidgets import QDialog, QDialogButtonBox
-from .utilities import get_qgis_app
+from PyQt4.QtGui import QDialog, QDialogButtonBox
+from utilities import get_qgis_app
 
 QGIS_APP = get_qgis_app()
 
